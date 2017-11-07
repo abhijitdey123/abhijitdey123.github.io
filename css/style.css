@@ -1,8 +1,5 @@
 body{
-    /*font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5px;*/
-    font: 85%/1.5 'Open Sans', sans-serif;    /* shortcut for above lines */
+    font: 85%/1.5 'Open Sans', sans-serif;    /* shorthand property of font; I have also used 'Open Sans' font by using Google Fonts */
     margin: 0;
     padding: 0;
     background: #f4f4f4;
@@ -11,8 +8,8 @@ body{
 /* Global */
 .container{
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: auto;	/* horizontally center the elements within this container class */
+    overflow: hidden;	/* the overflow is clipped, and the rest of the content will be invisible */
 }
 
 ul{
@@ -27,11 +24,11 @@ ul{
     padding-left: 20px;
     padding-right: 20px;
     color: #fff;
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;   /* I have also used 'Open Sans' font by using Google Fonts */
 }
 
 .button_1:hover{
-	background: #d1380e;
+    background: #d1380e;
 }
 
 /* Header */
@@ -51,7 +48,7 @@ header a{
 }
 
 header li{
-    display: inline-block;
+    display: inline-block;   /* set the list items in one line */
     padding: 0 20px 0 20px;
 }
 
@@ -81,9 +78,8 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;  /* to set the min height of showcase section to 400px, it doesn't go below that value */
-    background: url('../img/showcase.jpg') no-repeat center/cover;
-	/*background: url('../img/showcase.jpg') no-repeat 0 -400px;*/
-     /*(X Y) axis --> (0 -400px), here x=0 means do not shift the image in any direction & y=-400px means shift the image upwards by 400px (+ve value of any axis means shift along +ve direction of that axis; -ve value of any axis means shift along -ve direction of that axis)*/
+    background: url('../img/showcase.jpg') no-repeat center/cover;   /* this shorthand property makes the background image of showcase area responsive */
+    /*background: url('../img/showcase.jpg') no-repeat 0 -400px;*/
     text-align: center;
     color: #fff;
 }
@@ -145,7 +141,7 @@ footer{
   text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries ; it makes the webpage responsive for standard tablet screen size */
 @media(max-width: 768px){
 	
 	header #branding, header nav, #newsletter h1, #newsletter form, #boxes .box{
