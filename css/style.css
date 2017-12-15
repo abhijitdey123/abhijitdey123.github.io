@@ -44,9 +44,9 @@ ul{
 	font-size: 20px;
 	font-weight: bold;
 	color: #2a2b2b;
-	border-left: 5px solid #e8491d;
-	background: #f9be7f;
-	padding: 5px 10px 5px 10px;
+	border-bottom: 3px solid #e8491d;
+	padding-bottom: 2px;
+	margin: 20px 0 20px 0;
 }
 
 /* Header */
@@ -122,6 +122,7 @@ header a:hover{
     background: #35424a;
     color: #fff;
     padding: 15px;
+	margin-bottom: 10px;
 }
 
 #newsletter h1{
@@ -179,7 +180,7 @@ ul#services li{
 	list-style: none;	/* to remove the bullets from the list items */
 	padding: 20px;
 	border: #c1c1c1 solid 1px;
-	margin-bottom: 5px;
+	margin: 15px 0 5px 0;
 	background: #fff;
 }
 
