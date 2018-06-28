@@ -1,5 +1,11 @@
 /*JS document*/
 
+function preLoader(elem){
+    setTimeout(function(){
+        $(elem).fadeOut("slow");
+    }, 1500);
+}
+
 if(!window.Notification){
     alert('Notification Not supported!');
 }
@@ -15,5 +21,7 @@ if(Notification.permission === 'granted'){
         body: 'Hello World!',
         icon: './img/icon.png'
     });
-    setTimeout(notify.close().bind(notify), 2000);
+    setTimeout(function(){
+        notify.close();
+    }, 10000);
 }

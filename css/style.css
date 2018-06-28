@@ -8,12 +8,12 @@ body{
     background: #f4f4f4;
 }
 
-/*for preloader*/
+/*for preloader animation*/
 .spinner{
     width: 80px;
     height: 80px;
-    border: 2px solid #f3f3f3;
-	border-top:3px solid #f25a41;
+    border: 3px solid #f3f3f3;
+	border-top:4px solid #f25a41;
     border-radius: 100%;
     position: absolute;
     top:0;
