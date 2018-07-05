@@ -68,6 +68,7 @@ ul{
     padding-left: 20px;
     padding-right: 20px;
     color: #fff;
+    cursor: pointer;
 	font-family: 'Open Sans', sans-serif;   /* I have also used 'Open Sans' font by using Google Fonts */
 }
 
@@ -177,7 +178,7 @@ header a:hover{
     margin-top: 15px;
 }
 
-#newsletter input[type="email"]{
+#newsletter input[type="text"]{
     padding: 4px;
     height: 25px;
     width: 250px;
@@ -276,7 +277,7 @@ footer{
 		margin: auto;
 	}
 	
-	#newsletter form input[type="email"]{
+	#newsletter form input[type="text"]{
 		width: 100%;
 		margin-bottom: 5px;
 	}

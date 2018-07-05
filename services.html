@@ -10,11 +10,25 @@
 		<script src="./js/script.js"></script>
 		<link rel="shortcut icon" type="image/x-icon" href="./img/icon.ico">	<!--to add an icon before the title-->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">	<!--I have used 'Open Sans' font from Google Fonts-->
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-database.js"></script>
+		<script>
+			// Initialize Firebase
+			const config = {
+				apiKey: "AIzaSyAf_G7wdZUZvVfOUFZPuJVWdBKaHZj3roA",
+				authDomain: "edgewebdesign-e6021.firebaseapp.com",
+				databaseURL: "https://edgewebdesign-e6021.firebaseio.com",
+				projectId: "edgewebdesign-e6021",
+				storageBucket: "edgewebdesign-e6021.appspot.com",
+				messagingSenderId: "702039003221"
+			};
+			firebase.initializeApp(config);
+		</script>
 		<script>
             /*to hide preloader spinner after a specific time*/
             $(document).ready(function(){
-                preLoader("#overlay");
-            });
+				preLoader("#overlay");
+			});
         </script>
     </head>
 	
@@ -41,8 +55,9 @@
             <div class="container">
                 <h1> Subscribe To Our Newsletter </h1>
                 <form>
-                    <input type="email" placeholder="Enter Email...">
-                    <button type="submit" class="button_1">Subscribe</button>
+                    <input type="text" id="emailInput" placeholder="Enter Email...">
+					<button type="button" id="subscribeBtn" class="button_1">Subscribe</button>
+					<label id="errorlbl" style="display: none; color: red;"></label>
                 </form>
             </div>
         </section>
@@ -76,17 +91,17 @@
 						<form class="quote">
 							<div>
 								<label> Name </label><br>
-								<input type="text" placeholder="Name">
+								<input type="text" id="name" placeholder="Name">
 							</div>
 							<div>
 								<label> Email </label><br>
-								<input type="email" placeholder="Email Address">
+								<input type="email" id="email" placeholder="Email Address">
 							</div>
 							<div>
 								<label> Message </label><br>
-								<textarea placeholder="Message"></textarea>
+								<textarea id="message" placeholder="Message"></textarea>
 							</div>
-							<button class="button_1" type="submit">Send</button>
+							<button id="SendQuote" class="button_1" type="button">Send</button>
 						</form>
 					</div>
 				</aside>
